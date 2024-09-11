@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <Platforms>AnyCPU</Platforms>
+    <AlgoType>Strategy</AlgoType>
+    <AssemblyName>ImbStrV3</AssemblyName>
+    <RootNamespace>ImbStrV3</RootNamespace>
+    <StartAction>Program</StartAction>
+    <StartProgram>A:\Quantower\TradingPlatform\v1.140.14\Console.StarterNew.exe</StartProgram>
+    <StartArguments>--address 127.0.0.1 --port 54011</StartArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>A:\Quantower\TradingPlatform\v1.140.14\..\..\Settings\Scripts\Strategies\ImbStrV3</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>A:\Quantower\TradingPlatform\v1.140.14\..\..\Settings\Scripts\Strategies\ImbStrV3</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="TradingPlatform.BusinessLayer">
+      <HintPath>A:\Quantower\TradingPlatform\v1.140.14\bin\TradingPlatform.BusinessLayer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+</Project>
